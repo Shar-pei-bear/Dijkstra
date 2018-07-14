@@ -91,9 +91,6 @@ while true
     % Compute row, column coordinates of current node
     [i, j] = ind2sub(size(distanceFromStart), current);
     
-   % ********************************************************************* 
-    % YOUR CODE BETWEEN THESE LINES OF STARS
-    
     % Visit each neighbor of the current node and update the map, distances
     % and parent tables appropriately.
     if ((i + 1) <= nrows) && (distanceFromStart(i+1, j) > (min_dist + 1)) && (map(i+1, j) ~= 2) && (map(i+1,j) ~= 3) && (map(i+1,j) ~= 5)
